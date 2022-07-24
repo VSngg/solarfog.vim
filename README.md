@@ -10,6 +10,10 @@ Vim colorscheme based on solarized with minimal syntax highlighting
 
     Plug 'VSngg/solarfog.vim'
 
+
+    set termguicolors
+    colorscheme solarfog
+
 ### Thanks
 
 Based on [jaredgorski/fogbell.vim](https://github.com/jaredgorski/fogbell.vim)
