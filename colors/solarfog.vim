@@ -36,7 +36,6 @@ endfun
 " ==========================
 " Color Variables
 " ==========================
-let s:voidGray3   = {'gui': '#74888d', 'cterm256': '242'}
 let s:none        = {'gui': 'NONE', 'cterm256': 'NONE'}
 let s:base03      = {'gui': '#002b36', 'cterm256': '234'}
 let s:base02      = {'gui': '#073642', 'cterm256': '235'}
@@ -46,6 +45,7 @@ let s:base0       = {'gui': '#839496', 'cterm256': '244'}
 let s:base1       = {'gui': '#93a1a1', 'cterm256': '245'}
 let s:base2       = {'gui': '#eee8d5', 'cterm256': '187'}
 let s:base3       = {'gui': '#fdf6e3', 'cterm256': '230'}
+let s:gray        = {'gui': '#74888d', 'cterm256': '242'}
 let s:yellow      = {'gui': '#b58900', 'cterm256': '136'}
 let s:orange      = {'gui': '#cb4b16', 'cterm256': '166'}
 let s:red         = {'gui': '#dc322f', 'cterm256': '124'}
@@ -67,9 +67,9 @@ call <sid>hi('CursorLine', s:none, s:base02, 'none')
 call <sid>hi('CursorLineNr', s:base0, s:base01, 'none')
 call <sid>hi('Directory', s:base0, s:base03, 'none')
 call <sid>hi('FoldColumn', s:none, s:base02, 'none')
-call <sid>hi('Folded', s:voidGray3, s:none, 'none')
+call <sid>hi('Folded', s:gray, s:none, 'none')
 call <sid>hi('IncSearch', s:base03, s:cyan, 'none')
-call <sid>hi('LineNr', s:voidGray3, s:base02, 'none')
+call <sid>hi('LineNr', s:gray, s:base02, 'none')
 call <sid>hi('MatchParen', s:base0, s:orange, 'none')
 call <sid>hi('Normal', s:base0, s:base03, 'none')
 call <sid>hi('Pmenu', s:none, s:base02, 'none')
@@ -77,14 +77,14 @@ call <sid>hi('PmenuSel', s:none, s:base00, 'none')
 call <sid>hi('Search', s:base03, s:yellow, 'none')
 call <sid>hi('SignColumn', s:none, s:base02, 'none')
 call <sid>hi('StatusLine', s:base03, s:base0, 'none')
-call <sid>hi('StatusLineNC', s:voidGray3, s:base02, 'none')
-call <sid>hi('VertSplit', s:base03, s:voidGray3, 'none')
-call <sid>hi('Visual', s:none, s:base00, 'none')
+call <sid>hi('StatusLineNC', s:gray, s:base02, 'none')
+call <sid>hi('VertSplit', s:base03, s:gray, 'none')
+call <sid>hi('Visual', s:none, s:base02, 'none')
 
 " General
 call <sid>hi('Boolean', s:base0, s:none, 'none')
 call <sid>hi('Character', s:base0, s:none, 'none')
-call <sid>hi('Comment', s:base01, s:none, 'none')
+call <sid>hi('Comment', s:base01, s:none, 'italic')
 call <sid>hi('Conditional', s:base0, s:none, 'none')
 call <sid>hi('Constant', s:base0, s:none, 'none')
 call <sid>hi('Define', s:base0, s:none, 'none')
@@ -98,7 +98,7 @@ call <sid>hi('Function', s:base0, s:none, 'none')
 call <sid>hi('Identifier', s:base0, s:none, 'none')
 call <sid>hi('Keyword', s:base0, s:none, 'none')
 call <sid>hi('Label', s:base0, s:none, 'none')
-call <sid>hi('NonText', s:voidGray3, s:none, 'none')
+call <sid>hi('NonText', s:gray, s:none, 'none')
 call <sid>hi('Number', s:base0, s:none, 'none')
 call <sid>hi('Operator', s:base0, s:none, 'none')
 call <sid>hi('PreProc', s:base0, s:none, 'none')
@@ -112,7 +112,7 @@ call <sid>hi('StorageClass', s:base0, s:none, 'none')
 call <sid>hi('String', s:base0, s:none, 'none')
 call <sid>hi('Tag', s:base0, s:none, 'none')
 call <sid>hi('Title', s:none, s:none, 'bold')
-call <sid>hi('Todo', s:voidGray3, s:none, 'inverse,bold')
+call <sid>hi('Todo', s:gray, s:none, 'inverse,bold')
 call <sid>hi('Type', s:none, s:none, 'none')
 call <sid>hi('Underlined', s:none, s:none, 'underline')
 call <sid>hi('WarningMsg', s:base0, s:red, 'none')
@@ -329,7 +329,7 @@ call <sid>hi('rubyStringDelimiter', s:base0, s:none, 'none')
 call <sid>hi('rubySymbol', s:base0, s:none, 'none')
 
 " Ruby (Embedded)
-call <sid>hi('erubyComment', s:voidGray3, s:none, 'none')
+call <sid>hi('erubyComment', s:gray, s:none, 'none')
 call <sid>hi('erubyDelimiter', s:none, s:none, 'none')
 call <sid>hi('erubyRailsMethod', s:base0, s:none, 'none')
 
@@ -361,7 +361,7 @@ call <sid>hi('yamlKey', s:base0, s:none, 'none')
 " todo.txt
 call <sid>hi('TodoContext', s:base0, s:none, 'none')
 call <sid>hi('TodoDate', s:base0, s:none, 'none')
-call <sid>hi('TodoDone', s:voidGray3, s:none, 'none')
+call <sid>hi('TodoDone', s:gray, s:none, 'none')
 call <sid>hi('TodoPriorityA', s:base0, s:none, 'none')
 call <sid>hi('TodoPriorityB', s:base0, s:none, 'none')
 call <sid>hi('TodoPriorityC', s:base0, s:none, 'none')
@@ -371,5 +371,5 @@ call <sid>hi('TodoProject', s:base0, s:none, 'none')
 call <sid>hi('BufTabLineActive', s:base0, s:base00, 'none')
 call <sid>hi('BufTabLineCurrent', s:base03, s:base1, 'none')
 call <sid>hi('BufTabLineFill', s:base03, s:base03, 'none')
-call <sid>hi('BufTabLineHidden', s:voidGray3, s:base02, 'none')
+call <sid>hi('BufTabLineHidden', s:gray, s:base02, 'none')
 
