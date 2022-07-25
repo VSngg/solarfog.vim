@@ -9,7 +9,8 @@ Vim colorscheme based on solarized with minimal syntax highlighting
 ### Installation
 
     Plug 'VSngg/solarfog.vim'
-
+    
+### Usage
 
     set termguicolors
     colorscheme solarfog
