@@ -107,13 +107,13 @@ call <sid>hi('SpecialKey',      s:base0,    s:none,     'none')
 call <sid>hi('SpellBad',        s:orange,   s:none,     'italic,undercurl')
 call <sid>hi('SpellCap',        s:base0,    s:none,     'italic,undercurl')
 call <sid>hi('SpellLocal',      s:base0,    s:none,     'undercurl')
-call <sid>hi('Statement',       s:cyan,    s:none,     'none')
+call <sid>hi('Statement',       s:base0,    s:none,     'none')
 call <sid>hi('StorageClass',    s:base0,    s:none,     'none')
 call <sid>hi('String',          s:base0,    s:none,     'none')
 call <sid>hi('Tag',             s:base0,    s:none,     'none')
 call <sid>hi('Title',           s:none,     s:none,     'bold')
-call <sid>hi('Todo',            s:gray,     s:none,     'inverse,bold')
-call <sid>hi('Type',            s:none,     s:none,     'none')
+call <sid>hi('Todo',            s:gray,     s:none,     'italic,inverse,bold')
+call <sid>hi('Type',            s:base0,    s:none,    'bold')
 call <sid>hi('Underlined',      s:none,     s:none,     'underline')
 call <sid>hi('WarningMsg',      s:base0,    s:red,      'none')
 
@@ -161,6 +161,9 @@ call <sid>hi('cppStorageClass', s:base0, s:none, 'none')
 call <sid>hi('cppString', s:base0, s:none, 'none')
 call <sid>hi('cppStructure', s:base0, s:none, 'none')
 call <sid>hi('cppType', s:base0, s:none, 'none')
+
+"Go
+call <sid>hi('goType', s:base0, s:none, 'bold')
 
 " CSS
 call <sid>hi('cssAttr', s:base0, s:none, 'none')
