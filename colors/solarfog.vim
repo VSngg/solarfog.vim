@@ -37,23 +37,22 @@ endfun
 " Color Variables
 " ==========================
 let s:none        = {'gui': 'NONE', 'cterm256': 'NONE'}
-let s:base03      = {'gui': '#002b36', 'cterm256': '234'}
-let s:base02      = {'gui': '#073642', 'cterm256': '235'}
-let s:base01      = {'gui': '#586e75', 'cterm256': '239'}
-let s:base00      = {'gui': '#657b83', 'cterm256': '240'}
-let s:base0       = {'gui': '#839496', 'cterm256': '244'}
-let s:base1       = {'gui': '#93a1a1', 'cterm256': '245'}
-let s:base2       = {'gui': '#eee8d5', 'cterm256': '187'}
-let s:base3       = {'gui': '#fdf6e3', 'cterm256': '230'}
+let s:base03      = {'gui': '#001e27', 'cterm256': '234'}
+let s:base02      = {'gui': '#002831', 'cterm256': '235'}
+let s:base01      = {'gui': '#475b62', 'cterm256': '239'}
+let s:base00      = {'gui': '#536870', 'cterm256': '240'}
 let s:gray        = {'gui': '#74888d', 'cterm256': '242'}
-let s:yellow      = {'gui': '#b58900', 'cterm256': '136'}
-let s:orange      = {'gui': '#cb4b16', 'cterm256': '166'}
-let s:red         = {'gui': '#dc322f', 'cterm256': '124'}
-let s:magenta     = {'gui': '#d33682', 'cterm256': '125'}
-let s:violet      = {'gui': '#6c71c4', 'cterm256': '61' }
-let s:blue        = {'gui': '#268bd2', 'cterm256': '33' }
-let s:cyan        = {'gui': '#2aa198', 'cterm256': '37' }
-
+let s:base0       = {'gui': '#708284', 'cterm256': '244'}
+let s:base1       = {'gui': '#819090', 'cterm256': '245'}
+let s:base2       = {'gui': '#eae3cb', 'cterm256': '187'}
+let s:base3       = {'gui': '#fcf4dc', 'cterm256': '230'}
+let s:yellow      = {'gui': '#a57706', 'cterm256': '136'}
+let s:orange      = {'gui': '#bd3613', 'cterm256': '166'}
+let s:red         = {'gui': '#d11c24', 'cterm256': '124'}
+let s:magenta     = {'gui': '#c61c6f', 'cterm256': '125'}
+let s:violet      = {'gui': '#5956ba', 'cterm256': '61' }
+let s:blue        = {'gui': '#2176c7', 'cterm256': '33' }
+let s:cyan        = {'gui': '#259286', 'cterm256': '37' }
 " ==========================
 " Definitions
 " ==========================
@@ -85,7 +84,7 @@ call <sid>hi('Visual',          s:none,     s:base02,   'none')
 call <sid>hi('Boolean',         s:base0,    s:none,     'none')
 call <sid>hi('Character',       s:base0,    s:none,     'none')
 call <sid>hi('Comment',         s:base01,   s:none,     'italic')
-call <sid>hi('Conditional',     s:base0,    s:none,     'none')
+call <sid>hi('Conditional',     s:cyan,    s:none,     'none')
 call <sid>hi('Constant',        s:base0,    s:none,     'none')
 call <sid>hi('Define',          s:base0,    s:none,     'none')
 call <sid>hi('DiffAdd',         s:base03,   s:cyan,     'none')
@@ -93,14 +92,14 @@ call <sid>hi('DiffChange',      s:base03,   s:yellow,   'none')
 call <sid>hi('DiffDelete',      s:base0,    s:red,      'none')
 call <sid>hi('DiffText',        s:base01,   s:blue,     'none')
 call <sid>hi('ErrorMsg',        s:base0,    s:red,      'none')
-call <sid>hi('Float',           s:base0,    s:none,     'none')
+call <sid>hi('Float',           s:cyan,    s:none,     'none')
 call <sid>hi('Function',        s:base0,    s:none,     'none')
 call <sid>hi('Identifier',      s:base0,    s:none,     'none')
-call <sid>hi('Keyword',         s:base0,    s:none,     'none')
-call <sid>hi('Label',           s:base0,    s:none,     'none')
+call <sid>hi('Keyword',         s:cyan,    s:none,     'none')
+call <sid>hi('Label',           s:cyan,    s:none,     'none')
 call <sid>hi('NonText',         s:gray,     s:none,     'none')
-call <sid>hi('Number',          s:base0,    s:none,     'none')
-call <sid>hi('Operator',        s:base0,    s:none,     'none')
+call <sid>hi('Number',          s:cyan,    s:none,     'none')
+call <sid>hi('Operator',        s:cyan,    s:none,     'none')
 call <sid>hi('PreProc',         s:base0,    s:none,     'none')
 call <sid>hi('Special',         s:base0,    s:none,     'none')
 call <sid>hi('SpecialKey',      s:base0,    s:none,     'none')
@@ -368,8 +367,8 @@ call <sid>hi('TodoPriorityC', s:base0, s:none, 'none')
 call <sid>hi('TodoProject', s:base0, s:none, 'none')
 
 " Buftabline
-call <sid>hi('BufTabLineActive', s:base0, s:base00, 'none')
-call <sid>hi('BufTabLineCurrent', s:base03, s:base1, 'none')
+call <sid>hi('BufTabLineActive', s:base2, s:base03, 'none')
+call <sid>hi('BufTabLineCurrent', s:base0, s:base02, 'none')
 call <sid>hi('BufTabLineFill', s:base03, s:base03, 'none')
-call <sid>hi('BufTabLineHidden', s:gray, s:base02, 'none')
+call <sid>hi('BufTabLineHidden', s:gray, s:base03, 'none')
 
